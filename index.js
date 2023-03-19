@@ -54,7 +54,7 @@ const io = new Server(server, {
 const connectedUsers = {};
 
 io.on("connection", (socket) => {
-    // console.log("Connected to socket.io");
+    console.log("Connected to socket.io");
 
     socket.on("connect-user", async (data) => {
         console.log("Connected user", data.name);
